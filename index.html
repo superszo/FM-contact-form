@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+
+
+</head>
+<body>
+  <form>
+    <h1 class="heading">Contact Us</h1>
+    <div class="input-set">
+      <div class="input-s">
+        <label class="required body-s" for="f-name">First Name</label>
+        <input class="text-input req" type="text" id="f-name" name="f-name" >
+        <p class="error body-s">This field is required</p>
+      </div>
+
+      <div class="input-s">
+        <label class="required body-s" for="l-name">Last Name</label>
+        <input class="text-input req" type="text" id="l-name" name="l-name" >
+        <p class="error body-s">This field is required</p>
+      </div>
+    </div>
+    <div class="input-l">
+      <label class="required body-s" for="email">Email Address</label>
+      <input class="text-input req" type="email" id="email" name="email" >
+      <p class="error body-s">Please enter a valid email address</p>
+      <p class="error body-s">This field is required</p> 
+    </div>
+    <div class="input-l">
+      <label class="required body-s">Query Type</label>
+      <div class="input-set">
+        <div class="radio">
+          <input class="option" type="radio" value="general" id="general" name="query">
+          <label for="general">General Enquiry</label>
+        </div>
+        <div class="radio">
+          <input class="option" type="radio" value="support" id="support" name="query">
+          <label for="support">Support Request</label>
+        </div>
+      </div>
+      <p id="radio-error" class="error body-s">Please select a query type</p>
+    
+    </div>
+    <div class="input-l">
+      <label class="required body-s" for="message">Message</label>
+      <textarea class="req" id="message" rows="3"  ></textarea>
+      <p class="error body-s">This field is required</p>
+    </div>
+    <div class="consent">
+      <input class="req" type="checkbox" name="consent" id="consent"> 
+      <label for="consent" class="required body-s">I consent to being contacted by the team</label>
+      <p class="error body-s">To submit this form, please consent to being contacted</p>   
+    </div>
+    <button class="body-m-b" type="submit" id="submit">Submit</button>
+    
+  </form>
+  <div id="success">
+    <p class="body-m-b">Message Sent!</p>
+    <p class="body-s">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
